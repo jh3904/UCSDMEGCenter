@@ -10,41 +10,41 @@ nav {
       border-bottom: 1px solid #C69214;
       position: fixed;
 }
- 
+
 .logo {
       float: left;
       padding: 8px;
       margin-left: 16px;
       margin-top: 8px;
-      font-family: 'Asar', serif;
+      font-family: 'Montserrat', serif;
 }
- 
+
 .logo a {
       color: #fff;
       font-weight: 100;
       font-size: 18px;
-      letter-spacing: .5px;
+      letter-spacing: 1px;
       text-decoration: none;
 }
 
 .logo img {
       width: 150px;
 }
- 
+
 nav ul {
       float: right;
       font-family: 'Montserrat', sans-serif;
 }
- 
+
 nav ul li {
       display: inline-block;
       float: left;
 }
- 
+
 nav ul li:not(:first-child) {
       margin-left: 48px;
 }
- 
+
 nav ul li:last-child {
       margin-right: 24px;
 }
@@ -79,12 +79,12 @@ nav ul li a.active{
 nav ul li a.active:hover{
       cursor: default;
 }
- 
+
 @media screen and (max-width: 1000px) {
       .logo {
             padding: 0;
       }
- 
+
       .nav-wrapper {
             position: fixed;
             top: 0;
@@ -97,7 +97,7 @@ nav ul li a.active:hover{
             transition: all 0.1s ease;
             display: none;
       }
- 
+
       .nav-wrapper ul {
             position: absolute;
             top: 50%;
@@ -105,18 +105,18 @@ nav ul li a.active:hover{
             width: 100%;
             padding: 0px;
       }
- 
+
       .nav-wrapper ul li {
             float: none;
             width: 100%;
             text-align: right;
             margin-bottom: 10px;
       }
- 
+
       .nav-wrapper ul li:not(:first-child) {
             margin-left: 0;
       }
- 
+
       .nav-wrapper ul li a {
             padding: 10px 24px;
             opacity: 0;
@@ -127,7 +127,7 @@ nav ul li a.active:hover{
             transform: translateX(-20px);
             transition: all 0.1s ease;
       }
- 
+
       .nav-btn {
             position: absolute;
             right: 10px;
@@ -139,7 +139,7 @@ nav ul li a.active:hover{
             z-index: 9999;
             border-radius: 50%;
       }
- 
+
       .nav-btn i {
             display: block;
             width: 40px;
@@ -148,48 +148,48 @@ nav ul li a.active:hover{
             border-radius: 2px;
             margin-left: 14px;
       }
- 
+
       .nav-btn i:nth-child(1) {
             margin-top: 16px;
       }
- 
+
       .nav-btn i:nth-child(2) {
             margin-top: 8px;
             opacity: 1;
       }
- 
+
       .nav-btn i:nth-child(3) {
             margin-top: 8px;
       }
 }
- 
+
 #nav:checked + .nav-btn {
       transform: rotate(45deg);
 }
- 
+
 #nav:checked + .nav-btn i {
       background: #fff;
       transition: transform 0.2s ease;
 }
- 
+
 #nav:checked + .nav-btn i:nth-child(1) {
       transform: translateY(8px) rotate(180deg);
 }
- 
+
 #nav:checked + .nav-btn i:nth-child(2) {
       opacity: 0;
 }
- 
+
 #nav:checked + .nav-btn i:nth-child(3) {
       transform: translateY(-16px) rotate(90deg);
 }
- 
+
 #nav:checked ~ .nav-wrapper {
       z-index: 9990;
       opacity: 1;
       display: block;
 }
- 
+
 #nav:checked ~ .nav-wrapper ul li a {
       opacity: 1;
       transform: translateX(0);
