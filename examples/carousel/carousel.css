@@ -17,7 +17,7 @@ body {
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-  bottom: 3rem;
+  top: 4rem;
 }
 
 /* Declare heights because of positioning of img element */
@@ -53,16 +53,27 @@ body {
 -------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
+.marketing h1 {
+  color: #FFCD00;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.marketing .col-xl-4 {
   margin-bottom: 1.5rem;
   text-align: center;
 }
 .marketing h2 {
   font-weight: 400;
+  color: #006A96;
 }
-.marketing .col-lg-4 p {
+.marketing .col-xl-4 p {
   margin-right: .75rem;
   margin-left: .75rem;
+}
+
+.container {
+  max-width: 1240px;
 }
 
 .marketing img {
@@ -76,7 +87,7 @@ body {
 ------------------------- */
 
 .featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  margin: 5rem; /* Space out the Bootstrap <hr> more */
 }
 
 /* Thin out the marketing headings */
