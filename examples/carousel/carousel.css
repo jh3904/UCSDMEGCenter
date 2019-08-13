@@ -17,7 +17,7 @@ body {
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-  top: 4rem;
+  bottom: 4rem;
 }
 
 /* Declare heights because of positioning of img element */
@@ -53,10 +53,35 @@ body {
 -------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
+.featuredRow {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.featuredItem {
+    width: calc(100%/2 - 2rem);
+    margin: 0 1rem
+}
+
+.featuredItem img {
+    width: 100%
+}
+
+.featuredItem img:hover {
+    opacity: .7;
+}
+
 .marketing h1 {
   color: #FFCD00;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   text-align: center;
+  font-weight: 1000;
 }
 
 .marketing .col-xl-4 {
@@ -76,12 +101,70 @@ body {
   max-width: 1240px;
 }
 
-.marketing img {
+.col-xl-4 img {
   width: 140px;
   border-radius: 50%;
   padding-bottom: 10px;
 }
 
+.figurePaper:hover {
+  opacity: .7;
+  -webkit-transition: all 0.05s ease-in;
+  -moz-transition: all 0.05s ease-in;
+  -o-transition: all 0.05s ease-in;
+  -ms-transition: all 0.05s ease-in;
+  transition: all 0.05s ease-in;
+}
+
+.figureCaption {
+  font-size: 10px;
+}
+
+.col-md-4 h5 {
+  padding: 10px;
+}
+
+.col-md-4 .btn {
+  flex: 1 1 auto;
+  margin: 10px;
+  margin-top: 10%;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #fff !important;
+ /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+ }
+
+.btn:hover {
+  background-position: right center; /* change the direction of the change here */
+}
+
+.btn-1 {
+  background-image: linear-gradient(to right, #00b4ff 0%, #FFCD00 51%, #00b4ff 100%);
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:70%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top: 0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+footer p {
+  text-align: center;
+}
 
 /* Featurettes
 ------------------------- */
@@ -94,7 +177,11 @@ body {
 .featurette-heading {
   font-weight: 300;
   line-height: 1;
-  letter-spacing: -.05rem;
+}
+
+.marketing h4 {
+  font-weight: 300;
+  color: #006A96;
 }
 
 
@@ -110,12 +197,12 @@ body {
   }
 
   .featurette-heading {
-    font-size: 50px;
+    font-size: 300;
   }
 }
 
 @media (min-width: 62em) {
-  .featurette-heading {
+  /* .featurette-heading {
     margin-top: 7rem;
-  }
+  } */
 }
